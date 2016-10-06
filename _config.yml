@@ -7,8 +7,6 @@ paginate: 2 #6
 comments: true
 paginate_path: "/page/:num"
 
-source: src
-destination: bin
 sass:
   sass_dir: _scss
   style: compressed
