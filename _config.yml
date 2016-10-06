@@ -21,6 +21,7 @@ url: http://bashka.github.io
 baseurl: ""
 domain_name: bashka.github.io
 # google_analytics: UA-52446115-1
+yandex_metrika: 40061125
 repo: http://github.com/Bashka/bashka.github.io
 disqus_shortname: "bashka-github-io"
 
