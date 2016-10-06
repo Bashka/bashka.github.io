@@ -1,4 +1,4 @@
-permalink   : /:categories/:year/:title/
+permalink   : /posts/:title/
 #markdown    : kramdown
 #highlighter : pygments
 timezone: Europe/Moscow
