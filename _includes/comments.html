@@ -1,4 +1,4 @@
-{% if page.comments %}
+{% if jekyll.environment == "production" && page.comments %}
   <hr>
 
   <aside id="comments" class="disqus">

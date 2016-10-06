@@ -6,7 +6,6 @@ bodyclass: home
 
 <section class="posts txt-center container">
 
-  {{ jekyll.environment}}
   {% for post in paginator.posts %}
     {% include article.html %}
   {% endfor %}

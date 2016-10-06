@@ -39,49 +39,51 @@
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-{% comment %}=========================== Google Analytics ========================={% endcomment %}
-<!--
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
--->
-
-{% comment %}=========================== Yandex Metrika ========================={% endcomment %}
-{% if site.yandex_metrika %}
-	<script type="text/javascript">
-		(function (d, w, c) {
-			(w[c] = w[c] || []).push(function() {
-				try {
-					w.yaCounter{{ site.yandex_metrika }} = new Ya.Metrika({
-						id:{{ site.yandex_metrika }},
-						clickmap:true,
-						trackLinks:true,
-						accurateTrackBounce:true
-					});
-				} catch(e) { }
-			});
-			var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
-				n.parentNode.insertBefore(s, n);
-			};
-			s.type = "text/javascript";
-			s.async = true;
-			s.src = "https://mc.yandex.ru/metrika/watch.js";
-			if (w.opera == "[object Opera]") {
-				d.addEventListener("DOMContentLoaded", f, false);
-			} else {
-				f();
-			}
-		})(document, window, "yandex_metrika_callbacks");
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/40061125" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+{% if jekyll.environment == "production" %}
+  {% comment %}=========================== Google Analytics ========================={% endcomment %}
+  {% if site.google_analytics %}
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+  {% endif %}
+  
+  {% comment %}=========================== Yandex Metrika ========================={% endcomment %}
+  {% if site.yandex_metrika %}
+  	<script type="text/javascript">
+  		(function (d, w, c) {
+  			(w[c] = w[c] || []).push(function() {
+  				try {
+  					w.yaCounter{{ site.yandex_metrika }} = new Ya.Metrika({
+  						id:{{ site.yandex_metrika }},
+  						clickmap:true,
+  						trackLinks:true,
+  						accurateTrackBounce:true
+  					});
+  				} catch(e) { }
+  			});
+  			var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+  				n.parentNode.insertBefore(s, n);
+  			};
+  			s.type = "text/javascript";
+  			s.async = true;
+  			s.src = "https://mc.yandex.ru/metrika/watch.js";
+  			if (w.opera == "[object Opera]") {
+  				d.addEventListener("DOMContentLoaded", f, false);
+  			} else {
+  				f();
+  			}
+  		})(document, window, "yandex_metrika_callbacks");
+  	</script>
+  	<noscript><div><img src="https://mc.yandex.ru/watch/40061125" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  {% endif %}
 {% endif %}
 
 <script>base_url = "{{ site.baseurl }}";</script>
