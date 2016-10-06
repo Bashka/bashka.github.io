@@ -18,15 +18,13 @@
 
     {% if page.id %}
       <h1 class="post-title">{{ page.title }}</h1>
-      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    {% elsif page.bodyclass == 'page' %}
-      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta">
+		{% include date.html date=page.date%}
+		{% if page.author %} • {{ page.author }}{% endif %}
+		{% if page.meta %} • {{ page.meta }}{% endif %}
+	  </p>
     {% else %}
-	  <h1>
-		  <a href="{{ '/' | prepend: site.baseurl}}">
-			  {{ site.title }}
-		  </a>
-	  </h1>
+	  <br/>
       {% include search.html %}
     {% endif %}
 

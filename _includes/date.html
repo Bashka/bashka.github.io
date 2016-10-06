@@ -1,0 +1,16 @@
+{% assign m = include.date | date: "%-m" %}
+{% case m %}
+	{% when '1' %}Янв
+	{% when '2' %}Фев
+	{% when '3' %}Март
+	{% when '4' %}Апр
+	{% when '5' %}Май
+	{% when '6' %}Июнь
+	{% when '7' %}Июль
+	{% when '8' %}Авг
+	{% when '9' %}Сен
+	{% when '10' %}Окт
+	{% when '11' %}Ноя
+	{% when '12' %}Дек
+{% endcase %}
+{{ include.date | date: "%-d, %Y" }}

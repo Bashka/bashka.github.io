@@ -1,17 +1,24 @@
 <nav class="pagination" role="pagination">
-  <ul>
+  <span class="page-number">
+    {{paginator.page}} из {{paginator.total_pages}}
+  </span>
+  <div>
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <li><a class="next" href="{{ "/" | prepend: site.baseurl }}" title="Articles new">&laquo; Prev</a></li>
+        <a class="next" href="{{ "/" | prepend: site.baseurl }}" title="Новые статьи">
+          &laquo; Назад
+        </a>
       {% else %}
-        <li><a class="next" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/" title="Articles new">&laquo; Prev</a></li>
+        <a class="next" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/" title="Новые статьи">
+          &laquo; Назад
+        </a>
       {% endif %}
     {% endif %}
 
-    <li><span class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</span></li>
-
     {% if paginator.next_page %}
-      <li><a class="prev" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/" title="Articles old">Next &raquo;</a></li>
+      <a class="prev" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/" title="Старые статьи">
+        Вперед &raquo;
+      </a>
     {% endif %}
-  </ul>
+  </div>
 </nav>

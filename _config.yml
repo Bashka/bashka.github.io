@@ -2,6 +2,7 @@ permalink   : /:categories/:year/:title/
 #markdown    : kramdown
 #highlighter : pygments
 timezone: Europe/Moscow
+language: ru
 
 paginate: 2 #6
 comments: true
@@ -13,10 +14,10 @@ sass:
 
 cover: /assets/images/default-cover.png
 
-name: WebDev blog by Artur Sh. Mamedbekov
-title: WebDevBlog
-description: "WebDev blog by Artur Sh. Mamedbekov"
-keywords: "Web, PHP, JS, Doctrine, Zend Framework"
+name: Web Dev Blog by Artur Sh. Mamedbekov
+title: Bashka
+description: "Web Dev Blog by Artur Sh. Mamedbekov"
+keywords: "Web, PHP, JS, Doctrine, Zend Framework, RequireJS, BackboneJS, Git, Gulp, Bash"
 url: http://bashka.github.io
 baseurl: ""
 domain_name: bashka.github.io
