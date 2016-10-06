@@ -13,18 +13,16 @@ sass:
 
 cover: /assets/images/default-cover.png
 
-# site title, description, meta_description, meta_keywords
-# Details for the RSS feed generator
 name: WebDev blog by Artur Sh. Mamedbekov
 title: WebDevBlog
 description: "WebDev blog by Artur Sh. Mamedbekov"
 keywords: "Web, PHP, JS, Doctrine, Zend Framework"
-#url: http://nandomoreira.me
+url: http://bashka.github.io
 baseurl: ""
-#domain_name: nandomoreira.me
+domain_name: bashka.github.io
 # google_analytics: UA-52446115-1
-#repo: http://github.com/nandomoreirame/mug
-#disqus_shortname: "nandothemes"
+repo: http://github.com/Bashka/bashka.github.io
+disqus_shortname: "bashka-github-io"
 
 author_themes:
   name      : Fernando Moreira
