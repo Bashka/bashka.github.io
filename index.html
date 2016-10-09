@@ -12,5 +12,9 @@ bodyclass: home
 
   {% include pagination.html %}
 
+  {% if jekyll.environment == "production" %}
+    {% include onesignal.html %}
+  {% endif %}
+
 </section>
 

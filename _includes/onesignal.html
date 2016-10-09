@@ -1,0 +1,12 @@
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+<script type="text/javascript">
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(["init", {
+    appId: "{{ site.onesignal.id }}",
+    autoRegister: false,
+    subdomainName: "{{ site.onesignal.subdomain }}",
+    notifyButton: {
+      enable: true
+    }
+  }]);
+</script>
