@@ -323,6 +323,18 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
     margin-bottom: 1em;
   }
 
+  .post-content {
+    text-align: justify;
+
+    img {
+      cursor: -webkit-zoom-in;
+      cursor: zoom-in;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   &:after {
     content: '';
     @extend .hr;
@@ -337,14 +349,6 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
 .post-meta {
   font-style: italic;
   color: #aaa;
-}
-
-.post .post-content img {
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .posts {
