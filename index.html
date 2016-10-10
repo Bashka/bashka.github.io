@@ -3,9 +3,7 @@ layout: default
 title: Главная
 bodyclass: home
 ---
-
 <section class="posts txt-center container">
-
   {% for post in paginator.posts %}
     {% include article.html %}
   {% endfor %}
@@ -15,6 +13,4 @@ bodyclass: home
   {% if jekyll.environment == "production" %}
     {% include onesignal.html %}
   {% endif %}
-
 </section>
-

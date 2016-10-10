@@ -1,0 +1,1 @@
+<meta name="keywords" content="{% if page.id %}{% if page.keywords %}{{ page.keywords }}{% else %}{{ page.categories | join: "," }},{{ page.tags | join: ","}}{% endif %}{% else %}{{ site.keywords }}{% endif %}">

@@ -18,8 +18,7 @@
 <meta name="description" content="{{ page_description }}">
 
 {% comment %}======================= meta keywords ============================{% endcomment %}
-<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
-
+{% include keywords.html %}
 
 {% comment %}=====================  stylesheet main.css ======================{% endcomment %}
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
