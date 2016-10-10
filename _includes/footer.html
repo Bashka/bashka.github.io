@@ -1,9 +1,6 @@
-
 <div class="clearfix"></div>
-
 <footer class="site-footer txt-center">
-  <hr>
-
+  <hr/>
   <ul class="social">
     {% for item in site.social %}
       {% for i in item %}
@@ -11,8 +8,6 @@
       {% endfor %}
     {% endfor %}
   </ul>
-
   <small>&copy; {{ site.time | date: '%Y' }} All rights reserved. Made with <a href="http://jekyllrb.com" target="_blank">Jekyll</a> and <i class="icon icon-heart"></i></small>
   <small>by <a href="{{ site.author_blog.github }}">{{ site.author_blog.name }}</a></small>
-
 </footer>

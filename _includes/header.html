@@ -1,18 +1,15 @@
 <header class="site-header">
-
   <div class="container txt-center">
     {% if page.id %}
       <h1 class="post-title">{{ page.title }}</h1>
       <p class="post-meta">
-		{% include date.html date=page.date%}
-		{% if page.author %} • {{ page.author }}{% endif %}
-		{% if page.meta %} • {{ page.meta }}{% endif %}
-	  </p>
+        {% include date.html date=page.date%}
+        {% if page.author %} • {{ page.author }}{% endif %}
+        {% if page.meta %} • {{ page.meta }}{% endif %}
+      </p>
     {% else %}
-	  <br/>
+      <br/>
       {% include search.html %}
     {% endif %}
-
   </div>
-
 </header>

@@ -340,7 +340,8 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
 }
 
 .post .post-content img {
-  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
   display: block;
   margin-left: auto;
   margin-right: auto;

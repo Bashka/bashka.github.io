@@ -17,7 +17,7 @@ cover: /assets/images/default-cover.png
 name: Web Dev Blog by Artur Sh. Mamedbekov
 title: Bashka
 description: "Web Dev Blog by Artur Sh. Mamedbekov"
-keywords: "Web, PHP, JS, Doctrine, Zend Framework, RequireJS, BackboneJS, Git, Gulp, Bash"
+keywords: "Blog, Web, Develop, PHP, JS, Doctrine, Zend Framework, RequireJS, BackboneJS, Git, Gulp, Bash"
 url: http://bashka.github.io
 baseurl: ""
 domain_name: bashka.github.io

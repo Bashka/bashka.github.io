@@ -2,21 +2,19 @@
 layout: default
 bodyclass: single
 ---
-
-<script src="{{ '/js/viewerjs/viewer.min.js' | prepend: site.baseurl }}"></script>
-<link href="{{ '/js/viewerjs/viewer.min.css' | prepend: site.baseurl }}" rel="stylesheet">
 <article class="post">
-
   <div class="post-content container">
     {{ content }}
   </div>
 
   {% include comments.html %}
-
 </article>
+<script src="{{ '/js/viewerjs/viewer.min.js' | prepend: site.baseurl }}"></script>
+<link href="{{ '/js/viewerjs/viewer.min.css' | prepend: site.baseurl }}" rel="stylesheet">
 <script type="text/javascript">
   $('.post .post-content img').each(function(){
     new Viewer(this, {
+      fullscreen: false,
       title: false,
       navbar: false,
       toolbar: false,
