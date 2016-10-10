@@ -3,6 +3,8 @@ layout: default
 bodyclass: single
 ---
 
+<script src="{{ '/js/viewerjs/viewer.min.js' | prepend: site.baseurl }}"></script>
+<link href="{{ '/js/viewerjs/viewer.min.css' | prepend: site.baseurl }}" rel="stylesheet">
 <article class="post">
 
   <div class="post-content container">
@@ -12,3 +14,15 @@ bodyclass: single
   {% include comments.html %}
 
 </article>
+<script type="text/javascript">
+  $('.post .post-content img').each(function(){
+    new Viewer(this, {
+      title: false,
+      navbar: false,
+      toolbar: false,
+      rotable: false,
+      keyboard: false,
+      scalable: false
+    });
+  });
+</script>

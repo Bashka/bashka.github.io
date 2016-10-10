@@ -3,11 +3,5 @@ title: О блоге
 permalink: /about/
 ---
 
-# Привет
-Меня зовут Артур и это мой блог о Web-разработке. Здесь я буду освещать 
-интересующие меня темы, такие как:
-
-  * Языки: PHP, JS, Bash
-  * Фреймворки и библиотеки: Zend Framework, Doctrine, BackboneJS
-  * Инструменты разработки: Composer, RequireJS, Git, Gulp
-  * Алгоритмы, структуры данных, полезные советы связанные с разработкой в Web
+  * [RSS рассылка](/feed.xml).
+  * [Вопросы и предложения](http://github.com/Bashka/bashka.github.io/issues).

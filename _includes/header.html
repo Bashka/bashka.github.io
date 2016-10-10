@@ -1,21 +1,6 @@
 <header class="site-header">
 
   <div class="container txt-center">
-    <a href="#" class="nav-toogle js-menu-trigger sliding-panel-button">
-      <span></span>
-      <span></span>
-      <span></span>
-    </a>
-
-    <nav class="js-menu sliding-panel-content">
-      <ul>
-        <li><a href="{{ "/" | prepend: site.baseurl }}">главная</a></li>
-        <li><a href="{{ "/about" | prepend: site.baseurl }}">о блоге</a></li>
-        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank"><i class="icon icon-feed"></i> feed</a></li>
-      </ul>
-    </nav>
-    <div class="js-menu-screen sliding-panel-fade-screen"></div>
-
     {% if page.id %}
       <h1 class="post-title">{{ page.title }}</h1>
       <p class="post-meta">

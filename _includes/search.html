@@ -1,5 +1,18 @@
 <div class="search">
   <i class="icon icon-search"></i>
-  <input type="text" id="search-input" class="input" placeholder="enter the key for search..">
+  <input type="text" id="search-input" class="input" placeholder="...">
   <ul id="results-container" class="dropdown"></ul>
 </div>
+
+<script src="{{ '/js/jekyll-search.min.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: base_url + '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
+    noResultsText: '<li class="no-results">No results found :(</li>',
+    limit: 10,
+    fuzzy: false
+  });
+</script>
