@@ -27,6 +27,7 @@ repo: http://github.com/Bashka/bashka.github.io
 disqus_shortname: "bashka-github-io"
 onesignal:
   id: "44b964b3-c148-48f7-a1fa-166e958bceb1"
+  safari_id: "web.onesignal.auto.2ccd5ae7-3528-4a1e-96f6-138881299499"
   subdomain: "bashka-github"
 
 author_themes:

@@ -3,10 +3,38 @@
   var OneSignal = window.OneSignal || [];
   OneSignal.push(["init", {
     appId: "{{ site.onesignal.id }}",
-    autoRegister: false,
+    safari_web_id: "{{ site.onesignal.safari_id }}",
     subdomainName: "{{ site.onesignal.subdomain }}",
+    autoRegister: false,
     notifyButton: {
-      enable: true
+      enable: true,
+      text: {
+        "tip.state.unsubscribed": "Подписаться на уведомления",
+        "tip.state.subscribed": "Вы подписаны на уведомления",
+        "tip.state.blocked": "У вас отключены уведомления",
+        "message.prenotify": "Нажмите для подписки на уведомления",
+        "message.action.subscribed": "Спасибо за подписку!",
+        "message.action.resubscribed": "Вы подписаны на уведомления",
+        "message.action.unsubscribed": "Вы больше не будете получать уведомления",
+        "dialog.main.title": "Менеджер уведомлений",
+        "dialog.main.button.subscribe": "Подписаться",
+        "dialog.main.button.unsubscribe": "Отписаться",
+        "dialog.blocked.title": "Разблокировка уведомлений",
+        "dialog.blocked.message": "Следуйте этим инструкциям, чтобы разрешить уведомления"
+      },
+      welcomeNotification: {
+        title: "{{ site.name }}",
+        message: "Вы успешно подписались на новые уведомления"
+      },
+      promptOptions: {
+        siteName: "{{ site.name }}",
+        actionMessage: "Подписка на уведомления",
+        exampleNotificationTitle: "Пример уведомления",
+        exampleNotificationMessage: "Это пример уведомления",
+        exampleNotificationCaption: "Вы можете отписаться в любое время",
+        acceptButtonText: "Подтвердить",
+        cancelButtonText: "Отменить",
+      }
     }
   }]);
 </script>
