@@ -9,7 +9,9 @@
           this.page.url         = '{{ page.id | prepend: site.url }}';
           this.page.identifier  = '{{ page.id }}';
           this.page.title       = '{{ page.title }}';
-        };
+        },
+          disqus_url = '{{ page.id | prepend: site.url }}',
+          disqus_identifier = '{{ page.id }}';
       </script>
       <script type="text/javascript" src="//{{ site.disqus_shortname }}.disqus.com/embed.js"></script>
       <noscript>
