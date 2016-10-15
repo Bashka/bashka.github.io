@@ -24,5 +24,9 @@
         {% endif %}
       </a>
     </p>
+    <span>
+      <i class="icon icon-comments-o"></i>
+      <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread"></a>
+    </span>
   {% endif %}
 </article>

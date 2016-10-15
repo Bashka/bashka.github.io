@@ -18,7 +18,7 @@ name: Web Dev Blog by Artur Sh. Mamedbekov
 title: Bashka
 description: "Web Dev Blog by Artur Sh. Mamedbekov"
 keywords: "Blog, Web, Develop, PHP, JS, Doctrine, Zend Framework, RequireJS, BackboneJS, Git, Gulp, Bash"
-url: http://bashka.github.io
+url: https://bashka.github.io
 baseurl: ""
 domain_name: bashka.github.io
 # google_analytics: UA-52446115-1
