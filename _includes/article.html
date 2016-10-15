@@ -24,9 +24,9 @@
         {% endif %}
       </a>
     </p>
-    <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">
+    <span>
       <i class="icon icon-comments-o"></i> Комментарии
-      <span class="disqus-comment-count" data-disqus-url="{{ post.id | prepend: site.url }}"></span>
-    </a>
+      <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread"></a>
+    </span>
   {% endif %}
 </article>
