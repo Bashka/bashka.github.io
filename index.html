@@ -4,6 +4,7 @@ title: Главная
 bodyclass: home
 ---
 <section class="posts txt-center container">
+  <script id="dsq-count-scr" src="//{{ site.disqus_shortname }}.disqus.com/count.js" async></script>
   {% for post in paginator.posts %}
     {% include article.html %}
   {% endfor %}
