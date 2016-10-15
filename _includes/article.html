@@ -26,7 +26,7 @@
     </p>
     <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">
       <i class="icon icon-comments-o"></i> Комментарии
-      <span class="disqus-comment-count" data-disqus-url="{{ post.id | prepend: site.url }}" data-disqus-identifier="{{ post.id }}"/>
+      <span class="disqus-comment-count" data-disqus-url="{{ post.id | prepend: site.url }}"></span>
     </a>
   {% endif %}
 </article>
