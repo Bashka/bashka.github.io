@@ -10,6 +10,7 @@
           this.page.identifier  = '{{ page.id }}';
           this.page.title       = '{{ page.title }}';
         },
+          disqus_shortname = '{{ site.disqus_shortname }}',
           disqus_url = '{{ page.id | prepend: site.url }}',
           disqus_identifier = '{{ page.id }}';
       </script>
