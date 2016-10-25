@@ -350,6 +350,10 @@ $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
     ul {
       list-style-type: disc;
     }
+
+    h1, h2, h3 {
+      text-align: left;
+    }
   }
 
   &:after {
