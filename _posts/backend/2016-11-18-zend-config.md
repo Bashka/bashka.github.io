@@ -177,7 +177,7 @@ use Zend\Config\Processor\ProcessorInterface;
 use Zend\Config\Config;
 use Zend\Config\Exception\InvalidArgumentException;
 
-class UpperProcessor implementsuse ProcessorInterface{
+class UpperProcessor implements ProcessorInterface{
   public function processValue($value){
     return strtoupper($value);
   }
