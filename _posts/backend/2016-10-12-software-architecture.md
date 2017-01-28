@@ -34,7 +34,7 @@ echo json_encode([
 
 В данном скрипте прослеживается архитектура системы, которая на первый взгляд имеет следующий вид:
 
-![Архитектура системы получения стоимости билета в кино](http://www.plantuml.com/plantuml/png/ZO_12i9034Jl_OhymFO3F7ZmL45KP7kI8ciRruLbLvDKyUzDYqMG7ho5OJ8phx9sVrflmL3mLp5BEDQC19qJ1nv5a1fOG1i39W72UuyinOp7TFcPXlTLpo4XCyJiGziKlmAOY9UnQ1FEvEYbbkc2SbnH_XKp5HwGRpanwjo4v2IJ9iw8NyHgODxLLi6KzQ6uzCbu0m00)
+![Архитектура системы получения стоимости билета в кино](https://www.plantuml.com/plantuml/png/ZO_12i9034Jl_OhymFO3F7ZmL45KP7kI8ciRruLbLvDKyUzDYqMG7ho5OJ8phx9sVrflmL3mLp5BEDQC19qJ1nv5a1fOG1i39W72UuyinOp7TFcPXlTLpo4XCyJiGziKlmAOY9UnQ1FEvEYbbkc2SbnH_XKp5HwGRpanwjo4v2IJ9iw8NyHgODxLLi6KzQ6uzCbu0m00)
 
 Но давайте рассмотрим ее подробнее:
 

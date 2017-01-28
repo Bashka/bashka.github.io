@@ -49,7 +49,7 @@ class MailMessage extends Message{
 # Фабричный метод
 Паттерн _Фабричный метод_ достаточно прост в реализации и использовании. Он имеет следующую структуру:
 
-![Структура паттерна Фабричный метод](http://www.plantuml.com/plantuml/png/Iyv9B2vMSCxFIovABKcjvghbuag621Mb9fRa5rLpAIYa9IO3MPM-gIKP-IaQcWfMSFKWvSuGXGfwUdPmSG00)
+![Структура паттерна Фабричный метод](https://www.plantuml.com/plantuml/png/Iyv9B2vMSCxFIovABKcjvghbuag621Mb9fRa5rLpAIYa9IO3MPM-gIKP-IaQcWfMSFKWvSuGXGfwUdPmSG00)
 
 Его задача заключается в том, чтобы организовать специальный метод, который будет отвечать за создание объектов данного или другого класса и возвращать их.
 
